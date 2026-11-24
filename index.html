@@ -26,11 +26,13 @@
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-page);
             color: var(--text-dark);
-            min-height: 100vh;
+            height: 100vh;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 80px 20px;
+            justify-content: center;
+            padding: 30px 20px;
             background: linear-gradient(135deg, #ffffff 0%, var(--blue-light) 100%);
         }
 
@@ -49,20 +51,19 @@
             max-width: 700px; 
             display: flex;
             flex-direction: column;
-            gap: 25px;
-            margin-top: 40px;
+            gap: 16px;
         }
 
         /* Cabeçalho */
         .header-section {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 28px;
         }
 
         .header-section i {
-            font-size: 56px;
+            font-size: 48px;
             color: var(--blue-primary);
-            margin-bottom: 20px;
+            margin-bottom: 14px;
         }
 
         h1 {
@@ -70,12 +71,12 @@
             font-size: 42px;
             font-weight: 800;
             line-height: 1.2;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         p {
             font-size: 20px;
-            line-height: 1.6;
+            line-height: 1.5;
             color: var(--text-gray);
         }
 
@@ -83,7 +84,7 @@
         .link-card {
             background: white;
             border-radius: 16px;
-            padding: 25px 30px;
+            padding: 20px 30px;
             border: 2px solid var(--blue-light);
             box-shadow: 0 10px 30px rgba(0,0,0,0.03);
             display: flex;
@@ -124,7 +125,7 @@
 
         /* Ícone dentro do Card */
         .link-icon {
-            font-size: 40px;
+            font-size: 36px;
             color: var(--text-gray);
             transition: all 0.3s ease;
             width: 50px;
@@ -135,7 +136,7 @@
         .link-content {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 4px;
             flex: 1;
         }
 
@@ -165,6 +166,7 @@
 
         /* Responsividade para telas menores */
         @media (max-width: 768px) {
+            body { height: auto; min-height: 100vh; overflow: auto; justify-content: flex-start; padding: 40px 20px; }
             .logo-top-right {
                 position: static;
                 margin-bottom: 30px;
@@ -172,7 +174,6 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-            body { padding: 40px 20px; }
             h1 { font-size: 32px; }
             .link-card { padding: 20px; flex-direction: column; text-align: center; }
             .link-card::before { width: 100%; height: 6px; left: 0; top: 0; }
@@ -238,6 +239,19 @@
             <div class="link-content">
                 <span class="link-title">Calculadora e Gerador de Propostas</span>
                 <span class="link-subtitle">Ferramenta para cálculo e formatação de propostas comerciais.</span>
+            </div>
+            <div class="link-arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </a>
+
+        <a href="https://produto-contele.github.io/treinamento-onboarding/" target="_blank" class="link-card">
+            <div class="link-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="link-content">
+                <span class="link-title">Onboarding &amp; Treinamentos Internos</span>
+                <span class="link-subtitle">Integração de novos colaboradores e capacitação da equipe.</span>
             </div>
             <div class="link-arrow">
                 <i class="fa-solid fa-chevron-right"></i>
