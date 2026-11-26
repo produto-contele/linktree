@@ -57,7 +57,7 @@
         /* Cabeçalho */
         .header-section {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
 
         .header-section i {
@@ -78,6 +78,13 @@
             font-size: 20px;
             line-height: 1.5;
             color: var(--text-gray);
+        }
+
+        /* Card ímpar final centralizado */
+        .link-card:last-child:nth-child(odd) {
+            grid-column: 1 / -1;
+            justify-self: center;
+            width: calc(50% - 12px);
         }
 
         /* Estilo dos Links (Cards) */
@@ -177,6 +184,7 @@
             h1 { font-size: 32px; }
             .link-tree-container { grid-template-columns: 1fr; gap: 16px; }
             .header-section { margin-bottom: 28px; }
+            .link-card:last-child:nth-child(odd) { width: 100%; }
             .link-card { padding: 20px; flex-direction: column; text-align: center; }
             .link-card::before { width: 100%; height: 6px; left: 0; top: 0; }
             .link-arrow { display: none; }
@@ -267,6 +275,19 @@
             <div class="link-content">
                 <span class="link-title">Projetos Personalizados</span>
                 <span class="link-subtitle">Acervo de projetos sob medida já desenvolvidos para clientes.</span>
+            </div>
+            <div class="link-arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </a>
+
+        <a href="https://produto-contele.github.io/novidades-conteleteams/#1" target="_blank" class="link-card">
+            <div class="link-icon">
+                <i class="fa-solid fa-route"></i>
+            </div>
+            <div class="link-content">
+                <span class="link-title">Roadmap 2027</span>
+                <span class="link-subtitle">Novidades e evoluções planejadas para o Contele Teams.</span>
             </div>
             <div class="link-arrow">
                 <i class="fa-solid fa-chevron-right"></i>
