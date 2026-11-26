@@ -32,7 +32,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 30px 20px;
+            padding: 24px 20px;
             background: linear-gradient(135deg, #ffffff 0%, var(--blue-light) 100%);
         }
 
@@ -48,22 +48,22 @@
         /* Container Principal */
         .link-tree-container {
             width: 100%;
-            max-width: 700px; 
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
+            max-width: 1240px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
         }
 
         /* Cabeçalho */
         .header-section {
             text-align: center;
-            margin-bottom: 28px;
+            margin-bottom: 50px;
         }
 
         .header-section i {
-            font-size: 48px;
+            font-size: 56px;
             color: var(--blue-primary);
-            margin-bottom: 14px;
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -71,7 +71,7 @@
             font-size: 42px;
             font-weight: 800;
             line-height: 1.2;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         p {
@@ -84,7 +84,7 @@
         .link-card {
             background: white;
             border-radius: 16px;
-            padding: 20px 30px;
+            padding: 26px 30px;
             border: 2px solid var(--blue-light);
             box-shadow: 0 10px 30px rgba(0,0,0,0.03);
             display: flex;
@@ -125,7 +125,7 @@
 
         /* Ícone dentro do Card */
         .link-icon {
-            font-size: 36px;
+            font-size: 40px;
             color: var(--text-gray);
             transition: all 0.3s ease;
             width: 50px;
@@ -175,6 +175,8 @@
                 margin-right: auto;
             }
             h1 { font-size: 32px; }
+            .link-tree-container { grid-template-columns: 1fr; gap: 16px; }
+            .header-section { margin-bottom: 28px; }
             .link-card { padding: 20px; flex-direction: column; text-align: center; }
             .link-card::before { width: 100%; height: 6px; left: 0; top: 0; }
             .link-arrow { display: none; }
@@ -252,6 +254,19 @@
             <div class="link-content">
                 <span class="link-title">Onboarding &amp; Treinamentos Internos</span>
                 <span class="link-subtitle">Integração de novos colaboradores e capacitação da equipe.</span>
+            </div>
+            <div class="link-arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </a>
+
+        <a href="https://produto-contele.github.io/projetos/" target="_blank" class="link-card">
+            <div class="link-icon">
+                <i class="fa-solid fa-puzzle-piece"></i>
+            </div>
+            <div class="link-content">
+                <span class="link-title">Projetos Personalizados</span>
+                <span class="link-subtitle">Acervo de projetos sob medida já desenvolvidos para clientes.</span>
             </div>
             <div class="link-arrow">
                 <i class="fa-solid fa-chevron-right"></i>
